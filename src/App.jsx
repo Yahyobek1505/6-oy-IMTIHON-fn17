@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Info from "./pages/Info";
 import { useState, useEffect } from "react";
+import Error from "./pages/Error";
 export const ThemeContext = createContext();
 function App() {
   const [theme, setTheme] = useState('light');
@@ -29,6 +30,7 @@ function App() {
         <Route path="/info/:id" element ={<Info></Info>}></Route>
         <Route path="/login" element ={<Login></Login>}></Route>
         <Route path="/register" element ={<Register></Register>}> </Route>
+        <Route path="*" element ={<Error></Error>}> </Route>
       </Routes>
     </ThemeContext.Provider>
   );

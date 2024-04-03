@@ -1,14 +1,17 @@
 import { useState, useEffect } from "react"
 import { useParams, useNavigate, NavLink } from "react-router-dom"
+import { PuffLoader } from "react-spinners";
 import TopHeader from "../components/TopHeader";
 import Navbar from "../components/Navbar";
 // import { t, i18n} from "i18next";
 function info() {
  const [product, setProduct] = useState({});
+ const [loading, setLoading] = useState(false);
  const {id} = useParams();
  const navigate = useNavigate();
  useEffect(() => {
   if (id) {
+    setLoading(true)
     fetch(`https://strapi-store-server.onrender.com/api/products/${id}`, {
       method: "GET",
     })
@@ -19,8 +22,9 @@ function info() {
     })
     .catch((err) => {
       console.log(err);
-
-      
+    })
+    .finally(() =>{
+      setLoading(false)
     })
   }else{
     navigate('/')
@@ -30,7 +34,12 @@ function info() {
     <>
     <TopHeader></TopHeader>
     <Navbar></Navbar>
-     <div className="container mt-20 pb-10">
+     {
+       loading && <PuffLoader color="#000000" className="mt-[200px] ml-[700px]" />
+     }
+     {
+      !loading ?
+        <div className="container mt-20 pb-10">
      <div className="product flex  align-middle justify-center  gap-4">
       <div className="image-side w-[40%]">
         <NavLink to='/' className="hover:underline duration-300 ml-4">Home</NavLink>   > 
@@ -67,6 +76,8 @@ function info() {
       </div>
      </div>
      </div>
+      : ""
+     }
     </>
   )
 }

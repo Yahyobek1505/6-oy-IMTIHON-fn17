@@ -32,7 +32,25 @@ function Cart() {
             <option value="5">5</option>
             <option value="6">6</option>
            </select> <br />
-           <a href="#">remove</a>
+           <a href="#" className="text-blue-500 hover:underline">remove</a>
+          </div>
+          <h1 className="ml-40 mt-[-40px]">$399.99</h1>
+          <div className="amount ">
+            <div className="counter mt-16 p-4  rounded-lg bg-[#f0f6ff] pt-10 pb-4 ">
+             <div className="subtotal  flex justify-between mb-2 border-b-2 gap-40 pb-2">
+             <span>Subtotal</span>
+             <span>$399.99</span>
+             </div>
+             <div className="subtotal flex justify-between mb-2 border-b-2 gap-40">
+             <span>Shipping</span>
+             <span>$5.00</span>
+             </div>
+             <div className="subtotal flex justify-between mb-2 border-b-2 gap-40">
+             <span>Tax</span>
+             <span>$34.00</span>
+             </div>
+            </div>
+          <button className="btn btn-primary uppercase w-80  mt-6" >Please Login</button>
           </div>
         </div>
       </div>
