@@ -5,8 +5,8 @@ import Navbar from "../components/Navbar";
 import { useTranslation } from "react-i18next";
 function About() {
   const { t, i18n } = useTranslation();
-
-  function handleChange(e) {  const [lang, setLang] = useState("uz");
+  const [lang, setLang] = useState("uz");
+  function handleChange(e) {
     setLang(e.target.value);
     i18n.changeLanguage(e.target.value);
     localStorage.setItem('language', e.target.value)

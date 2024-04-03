@@ -1,12 +1,17 @@
 import React from 'react'
-import { useTranslation } from "react-i18next";
-import { useState, useEffect } from "react";
-function index(props) {
-const {image, title, price, id} = props.data
-console.log(id);
+import { useNavigate,} from 'react-router-dom';
+function Card(props) {
+  const {id} = props.product;
+  const {image, title, price} = props.product.attributes;
+  // console.log(id);
+  const navigate = useNavigate()
+  function handleRedirect() {
+    navigate(`/info/${id}`)
+    // console.log(id);
+  }
   return (
     <div className="card-wrapper flex ">
-    <div className="card border-none w-[22rem] cursor-pointer shadow-md p-2 hover:shadow-2xl duration-200">
+    <div onClick={handleRedirect}  className="card border-none w-[22rem] cursor-pointer shadow-md p-2 hover:shadow-2xl duration-200">
       <img
         src={image}
         alt=""
@@ -23,4 +28,4 @@ console.log(id);
   )
 }
 
-export default index
+export default Card

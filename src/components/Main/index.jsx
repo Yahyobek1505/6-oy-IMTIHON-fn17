@@ -2,11 +2,12 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
 import { PuffLoader } from "react-spinners";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Hero1 from "../../assets/hero1.webp";
 import Hero2 from "../../assets/hero2.webp";
 import Hero3 from "../../assets/hero3.webp";
 import Hero4 from "../../assets/hero4.webp";
+import HomeCard from "../HomeCard";
 function Main() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -137,22 +138,8 @@ function Main() {
            loading && <PuffLoader color="#000000" className="mt-20" />
           }
         {
-         !loading && data && data.map((el, index) =>{
-            return (
-              <div key={index} className="card-wrapper flex ">
-          <div className="card border-none w-[22rem] cursor-pointer shadow-md p-2 hover:shadow-2xl duration-200">
-            <img
-              src={el.attributes.image}
-              alt=""
-              className="rounded-xl h-64 md:h-48 w-full object-cover mt-4"
-            />
-            <h2 className="card-title capitalize tracking-wider text-center mt-4">
-            {el.attributes.title}
-            </h2>
-            <p className="text-secondary text-center mt-2">${el.attributes.price}</p>
-          </div>
-        </div>
-            )
+         !loading && data && data.map((product, index) =>{
+            return <HomeCard key={index} product = {product}></HomeCard>
           })
         }
         </div>

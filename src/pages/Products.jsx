@@ -6,10 +6,9 @@ import Navbar from "../components/Navbar";
 import { useState, useEffect } from "react";
 import Card from '../components/Card'
 
-function handleClick() {
-  
-}
 function Products() {
+
+
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const { t, i18n } = useTranslation();
@@ -48,7 +47,7 @@ function Products() {
     <div>
       <TopHeader></TopHeader>
       <Navbar></Navbar>
-      <section className="form-section mt-20 container rounded-md p-8 max-w-[1220px] pb-6 bg-[#f0f6ff]">
+      <section className="form-section mt-20 container rounded-md p-8 max-w-[1160px] pb-6 bg-[#f0f6ff]">
         <div className="form-box">
           <div className="input-rows ">
             <form className="flex gap-4">
@@ -137,9 +136,9 @@ function Products() {
            loading && <PuffLoader color="#000000" className="mt-20" />
           }
           {
-            !loading && data && data.map((el, index) => {
+            !loading && data && data.map((product, index) => {
               return (
-                <Card key={index}  data ={ el.attributes}></Card>
+                <Card key={index}  product = {product}></Card>
               );
             })}
           
