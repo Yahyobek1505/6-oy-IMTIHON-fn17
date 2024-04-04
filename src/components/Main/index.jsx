@@ -48,7 +48,7 @@ function Main() {
   }, []);
 
   return (
-    <div className="container w-lg-[1240px] mx-auto px-16 pb-10 dark:bg-[#272935] dark:text-white">
+    <div className="container w-lg-[1240px] mx-auto px-16 pb-10">
       <section className=" row align-element flex py-14">
         <div className=" col-7 gap-2 items-center">
           <div>
@@ -59,7 +59,7 @@ function Main() {
               {t("desc")}
             </p>
             <div className="mt-10">
-              <NavLink className="btn btn-primary" to="/products">
+              <NavLink className="btn btn-primary dark:bg-[#ff7ac6] dark:text-black" to="/products">
                 {t("button")}
               </NavLink>
             </div>
@@ -133,7 +133,7 @@ function Main() {
           </h2>
           {/* <hr className="mt-4 opacity-10"/> */}
         </div>
-        <div className="flex flex-wrap gap-4 align-middle justify-center mt-4 ">
+        <div className="flex flex-wrap gap-4 align-middle justify-center">
         {
            loading && <PuffLoader color="#000000" className="mt-20" />
           }

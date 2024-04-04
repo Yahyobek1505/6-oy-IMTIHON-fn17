@@ -23,7 +23,7 @@ function Navbar() {
   return (
     <div className="bg-[#f0f6ff] dark:bg-[#181920] dark:text-white">
       <div className="navBar py-3 flex justify-between align-element container px-16">
-        <div className="logo ">
+        <div className="logo  dark:text-black ">
           <button className="text-4xl text-white w-14 rounded-lg h-12 bg-[#0069e0] dark:bg-[#ff7ac6] dark:text-black">
             C
           </button>
