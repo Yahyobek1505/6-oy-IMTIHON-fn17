@@ -117,10 +117,10 @@ function Products() {
             <div className="button dark:bg-[#1e2029] dark:text-white">
               <button
                 type="submit"
-                className="btn btn-primary text-2xl btn-sm w-64 mt-10">
+                className="btn btn-primary text-2xl btn-sm w-64 mt-10 dark:bg-[#ff7ac6] dark:text-white">
                 {t("searchInput")}
               </button>
-              <button className="btn btn-danger btn-sm w-64 mt-10 ml-20 text-2xl dark:bg-[#1e2029] dark:text-white">
+              <button className="btn btn-danger btn-sm w-64 mt-10 ml-20 text-2xl dark:bg-[#632fdb] dark:text-white">
                 {t("reset")}
               </button>
             </div>

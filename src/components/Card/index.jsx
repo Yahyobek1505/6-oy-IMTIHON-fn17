@@ -10,8 +10,8 @@ function Card(props) {
     // console.log(id);
   }
   return (
-    <div className="card-wrapper flex dark:bg-[#1e2029] dark:text-white">
-    <div onClick={handleRedirect}  className="card border-none w-[22rem] cursor-pointer shadow-md p-2 hover:shadow-2xl duration-200 dark:bg-[#1e2029] dark:text-white">
+    <div className="card-wrapper flex dark:bg-[#1e2029] dark:text-white rounded-2xl mt-6">
+    <div onClick={handleRedirect}  className="card border-none w-[22rem] cursor-pointer  shadow-md p-2 hover:shadow-2xl duration-200 dark:bg-[#1e2029] dark:text-white">
       <img
         src={image}
         alt=""

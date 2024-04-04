@@ -17,11 +17,11 @@ function DarkMode() {
     <>
       <div className="relative">
       {
-        theme == "light" && <LuSun className="cursor-pointer text-3xl mt-2 absolute right-0 z-10" 
+        theme == "dark" && <LuSun className="cursor-pointer text-3xl mt-2 absolute right-0 z-10" 
         onClick={() => setTheme(theme == "light" ? "dark" : "light")}/>
       }
           {
-            theme == "dark" && <IoMdMoon
+            theme == "light" && <IoMdMoon
             className="cursor-pointer text-2xl mt-2 right-2" onClick={() => setTheme(theme == "light" ? "dark" : "light")}/>
           }
       </div>

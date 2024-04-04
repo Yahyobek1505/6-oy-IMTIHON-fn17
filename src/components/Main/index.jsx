@@ -133,7 +133,7 @@ function Main() {
           </h2>
           {/* <hr className="mt-4 opacity-10"/> */}
         </div>
-        <div className="flex flex-wrap gap-4 align-middle justify-center">
+        <div className="flex flex-wrap gap-4 align-middle justify-center mt-4 ">
         {
            loading && <PuffLoader color="#000000" className="mt-20" />
           }
