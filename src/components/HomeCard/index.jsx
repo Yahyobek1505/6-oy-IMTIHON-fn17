@@ -12,7 +12,7 @@ function HomeCard(props) {
   }
   return (
     <>
-      <div onClick={handleRedirect} className="card-wrapper flex dark:bg-[#272935] dark:text-white">
+      <div onClick={handleRedirect} className="card-wrapper flex dark:bg-[#272935] dark:text-white mt-4">
           <div className="card border-none w-[22rem] cursor-pointer shadow-md p-2 hover:shadow-2xl duration-200 dark:bg-[#1e2029] dark:text-white">
             <img
               src={image}
