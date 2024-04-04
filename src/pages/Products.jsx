@@ -42,14 +42,14 @@ function Products() {
       })
   }, []);
   return (
-    <div>
+    <div className="dark:bg-[#272935] dark:text-white">
       <TopHeader></TopHeader>
       <Navbar></Navbar>
-      <section className="form-section mt-20 container rounded-md p-8 max-w-[1160px] pb-6 bg-[#f0f6ff]">
-        <div className="form-box">
-          <div className="input-rows ">
-            <form className="flex gap-4">
-              <div className="search">
+      <section className="form-section mt-20 container rounded-md p-8 max-w-[1160px] pb-6 bg-[#f0f6ff] dark:bg-[#1e2029] dark:text-white">
+        <div className="form-box dark:bg-[#1e2029] dark:text-white">
+          <div className="input-rows dark:bg-[#1e2029] dark:text-white ">
+            <form className="flex gap-4 dark:bg-[#1e2029] dark:text-white">
+              <div className="search dark:bg-[#1e2029] dark:text-white">
                 <label
                   htmlFor="search"
                   className="block ml-2 text-xl text-slate-500 mb-2 ">
@@ -57,7 +57,7 @@ function Products() {
                 </label>
                 <input
                   type="search"
-                  className="w-60 h-12 outline-[#bcd5fc] rounded-md indent-4  duration-300 border-2 border-gray-500"
+                  className="w-60 h-12 outline-[#bcd5fc] rounded-md indent-4  duration-300 border-2 border-gray-500 dark:bg-[#1e2029] dark:text-white"
                 />
               </div>
               <div className="search">
@@ -69,7 +69,7 @@ function Products() {
                 <select
                   name=""
                   id=""
-                  className="w-60 h-12  outline-[#bcd5fc] rounded-md indent-4  duration-300 border-2 border-gray-500 text-xl">
+                  className="w-60 h-12  outline-[#bcd5fc] rounded-md indent-4  duration-300 border-2 border-gray-500 text-xl dark:bg-[#1e2029] dark:text-white">
                   <option value="all">all</option>
                   <option value="all">Tables</option>
                   <option value="all">Chairs</option>
@@ -87,7 +87,7 @@ function Products() {
                 <select
                   name=""
                   id=""
-                  className="w-60 h-12  outline-[#bcd5fc] rounded-md indent-4  duration-300 border-2 border-gray-500 text-xl">
+                  className="w-60 h-12  outline-[#bcd5fc] rounded-md indent-4  duration-300 border-2 border-gray-500 text-xl dark:bg-[#1e2029] dark:text-white">
                   <option value="all">all</option>
                   <option value="all">Modezna</option>
                   <option value="all">Luxora</option>
@@ -105,7 +105,7 @@ function Products() {
                 <select
                   name=""
                   id=""
-                  className="w-60 h-12  outline-[#bcd5fc] rounded-md indent-4  duration-300 border-2 border-gray-500 text-xl">
+                  className="w-60 h-12  outline-[#bcd5fc] rounded-md indent-4  duration-300 border-2 border-gray-500 text-xl dark:bg-[#1e2029] dark:text-white">
                   <option value="a-z">a-z</option>
                   <option value="all">z-a</option>
                   <option value="all">high</option>
@@ -114,20 +114,20 @@ function Products() {
               </div>
             </form>
 
-            <div className="button">
+            <div className="button dark:bg-[#1e2029] dark:text-white">
               <button
                 type="submit"
                 className="btn btn-primary text-2xl btn-sm w-64 mt-10">
                 {t("searchInput")}
               </button>
-              <button className="btn btn-danger btn-sm w-64 mt-10 ml-20 text-2xl">
+              <button className="btn btn-danger btn-sm w-64 mt-10 ml-20 text-2xl dark:bg-[#1e2029] dark:text-white">
                 {t("reset")}
               </button>
             </div>
           </div>
         </div>
       </section>
-      <section className="cardion mb-10">
+      <section className="cardion pb-10">
         <div className="flex flex-wrap gap-4 align-middle justify-center">
           
           {

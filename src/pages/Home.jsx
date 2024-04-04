@@ -5,7 +5,7 @@ import Main from "../components/Main";
 function Home() {
   
   return (
-    <div>
+    <div className='dark:bg-[#272935] dark:text-white'>
       <TopHeader></TopHeader>
       <Navbar></Navbar>
       <Main></Main>

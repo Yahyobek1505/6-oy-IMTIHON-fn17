@@ -65,8 +65,8 @@ function Login() {
 
   return (
     <>
-      <div className=" h-screen px-4 pt-10">
-        <div className=" container mx-auto block w-[500px] bg-slate-50 shadow-sm shadow-current text-center p-4 form column border-2">
+      <div className=" h-screen px-4 pt-10 dark:bg-[#272935] dark:text-white">
+        <div className=" container mx-auto block w-[500px] bg-slate-50 shadow-sm shadow-current text-center p-4 form column border-2 dark:bg-[#272935] dark:text-white">
         <h1 className="text-4xl font-semibold mb-4">Login</h1>
         <Box  component="form"
       sx={{
@@ -77,11 +77,11 @@ function Login() {
       autoComplete="off">
         <TextField inputRef={name} className="w-96" type="text" id="outlined-basic1" label="User name" variant="outlined" /> 
         <TextField inputRef={password} className="w-96" type="password" id="outlined-basic2" label="Password" variant="outlined" />
-        <Button disabled={loading ? true : false} onClick={handleLogin} className="w-56"  variant="contained">{loading ? "Loading....." : "Login"}
+        <Button disabled={loading ? true : false} onClick={handleLogin} className="w-56 bg-[#ff7ac6]"  variant="contained">{loading ? "Loading....." : "Login"}
 </Button>
         </Box>
         <span >Not a member yet?</span>
-        <Link to="/register" className="text-blue-700 ml-2">Register</Link>
+        <Link to="/register" className="text-blue-700 ml-2 dark:text-[#ff7ac6] ">Register</Link>
         </div>
       </div>
     </>

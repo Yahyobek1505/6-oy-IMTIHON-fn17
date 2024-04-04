@@ -48,7 +48,7 @@ function Main() {
   }, []);
 
   return (
-    <div className="container w-lg-[1240px] mx-auto px-16 pb-10">
+    <div className="container w-lg-[1240px] mx-auto px-16 pb-10 dark:bg-[#272935] dark:text-white">
       <section className=" row align-element flex py-14">
         <div className=" col-7 gap-2 items-center">
           <div>

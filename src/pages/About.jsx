@@ -22,7 +22,7 @@ function About() {
     <div>
       <TopHeader></TopHeader>
       <Navbar></Navbar>
-      <section className="align-element py-20">
+      <section className="align-element py-20 dark:bg-[#272935] dark:text-white h-[100vh]">
         <div className="flex flex-wrap gap-4 sm:gap-x-6 items-center justify-center">
           <h1 className="text-4xl font-bold leading-none tracking-tight sm:text-6xl">
             {t("love")}

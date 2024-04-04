@@ -39,14 +39,14 @@ function info() {
      }
      {
       !loading ?
-        <div className="container mt-20 pb-10">
+        <div className="container mt-20 pb-10 dark:bg-[#181920] dark:text-white" >
      <div className="product flex  align-middle justify-center  gap-4">
       <div className="image-side w-[40%]">
         <NavLink to='/' className="hover:underline duration-300 ml-4">Home</NavLink>   > 
         <NavLink to='/products' className="hover:underline duration-300 ml-2">Product </NavLink> 
       <img src={product.image} alt=""  className="w-[100%] rounded-2xl mt-2  h-[350px]"/>
       </div>
-      <div className="title-side ml-4 w-[50%]">
+      <div className="title-side ml-4 w-[50%] ">
       <h1 className="capitalize text-3xl font-bold mt-4">{product.title}</h1>
       <h3 className="capitalize text-slate-300 text-2xl font-medium mt-2">{product.company}</h3>
       <h4 className=" text-slate-900 text-2xl font-regular mt-2 mb-2">${product.price}</h4>
@@ -72,7 +72,7 @@ function info() {
         <option value="14">14</option>
         <option value="15">15</option>
       </select>
-      <button className="btn btn-primary">ADD TO BAG</button>
+      <NavLink to='/cart'><button className="btn btn-primary">ADD TO BAG</button></NavLink>
       </div>
      </div>
      </div>

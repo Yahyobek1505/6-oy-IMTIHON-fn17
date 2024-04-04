@@ -96,8 +96,8 @@ function Register() {
   }
   return (
     <>
-      <div className=" h-screen px-4 pt-10">
-        <div className=" container mx-auto block w-[500px] bg-slate-50 shadow-sm shadow-current text-center p-4 form column border-2">
+      <div className=" h-screen px-4 pt-10 dark:bg-[#272935] dark:text-white">
+        <div className=" container mx-auto block w-[500px] bg-slate-50 shadow-sm shadow-current text-center p-4 form column border-2 dark:bg-[#1e2029] dark:text-white">
           <h1 className="text-4xl font-semibold mb-4">Register</h1>
           <Box
             component="form"
@@ -143,9 +143,10 @@ function Register() {
             <Button
               disabled={loading ? true : false}
               onClick={handleRegister}
-              className="w-56"
+              className="w-56 dark:bg-[#ff7ac6] dark:text-white "
               variant="contained">
               {loading ? "Loading....." : "Send"}
+            
             </Button>
           </Box>
           <span className="mt-2">Already a member?</span>
