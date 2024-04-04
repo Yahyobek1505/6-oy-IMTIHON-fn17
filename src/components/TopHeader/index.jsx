@@ -20,7 +20,7 @@ function TopHeader() {
   }, [])
 
   return (
-    <div className=' top bg-[#021431] py-1 px-20 dark:bg-[#181920] dark:text-white'>
+    <div className=' top bg-[#021431] py-1 px-20 dark:bg-[#272935] dark:text-white'>
       <div>
       <div className="container flex justify-end gap-4 px-2">
         <NavLink className='text-[#c7c9d1]' to='/login'>{t("login")}</NavLink>

@@ -3,3 +3,8 @@
   border-radius: 10px;
   color: #fff; 
 }
+.dark .active{
+  background-color: #272935;
+  border-radius: 10px;
+  color: #fff; 
+}

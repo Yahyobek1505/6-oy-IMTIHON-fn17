@@ -68,7 +68,7 @@ function Navbar() {
           {lang == "en" ? (
             <US title="United States" className="w-10 h-10" />
           ) : (
-            <UZ title="United States" className="w-10 h-10" />
+            <UZ title="Uzbekistan" className="w-10 h-10" />
           )}
 
           <select
