@@ -39,7 +39,7 @@ function info() {
      }
      {
       !loading ?
-        <div className="container mt-20 pb-10 dark:bg-[#181920] dark:text-white" >
+        <div className="container mt-20 pb-10 dark:bg-[#272935] dark:text-white" >
      <div className="product flex  align-middle justify-center  gap-4">
       <div className="image-side w-[40%]">
         <NavLink to='/' className="hover:underline duration-300 ml-4">Home</NavLink>   > 
@@ -49,13 +49,13 @@ function info() {
       <div className="title-side ml-4 w-[50%] ">
       <h1 className="capitalize text-3xl font-bold mt-4">{product.title}</h1>
       <h3 className="capitalize text-slate-300 text-2xl font-medium mt-2">{product.company}</h3>
-      <h4 className=" text-slate-900 text-2xl font-regular mt-2 mb-2">${product.price}</h4>
+      <h4 className=" text-slate-900 text-2xl font-regular mt-2 mb-2 dark:bg-[#272935] dark:text-white">${product.price}</h4>
       <p>{product.description}</p>
       <p className="text-2xl font-regular mt-2 mb-2">Colors</p>
       <span className=" bg-[#33FF57] cursor-pointer  w-5 h-5 rounded-full inline-block"></span>
       <span className=" bg-[#f1ff33] cursor-pointer w-5 h-5 rounded-full inline-block ml-2"></span>
       <span className=" bg-[#9233ff] cursor-pointer w-5 h-5 rounded-full inline-block ml-2"></span>
-      <select name="" id="" className="block mt-2 mb-2 w-40 border outline-slate-500 h-8 rounded-md">
+      <select name="" id="" className="block mt-2 mb-2 w-40 border outline-slate-500 h-8 rounded-md dark:bg-[#272935] dark:text-white">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
